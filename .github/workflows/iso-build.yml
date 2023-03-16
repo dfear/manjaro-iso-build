@@ -45,7 +45,7 @@ jobs:
           edition: ${{ matrix.edition }}
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
-          iso-profiles-repo: "https://github.com/dfear/iso-profiles/tree/PickleIT_customisations"
+          iso-profiles-repo: "https://github.com/dfear/iso-profiles"
           # version: "21.0"
           kernel: linux515
           code-name: "Ornara"
