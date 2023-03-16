@@ -26,7 +26,7 @@ jobs:
       matrix:
         EDITION: [kde]
         BRANCH: [stable]
-        SCOPE: [full]
+        SCOPE: [minimal]
     steps:
       - 
         name: prepare cancel workflow 
@@ -47,6 +47,7 @@ jobs:
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
           version: ${{ steps.time.outputs.time }}
+          iso-profiles-repo: "https://github.com/dfear/iso-profiles"
           kernel: linux515
           code-name: "Custom-Build"
           release-tag: ${{ needs.prepare-release.outputs.release_tag }}
